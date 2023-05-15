@@ -1,1 +1,0 @@
-../Goliath/data/methods.md
