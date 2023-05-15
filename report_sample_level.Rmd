@@ -13,7 +13,7 @@ self_contained: true
 params:
   analysis_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/analysis/"
   portal_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/portal/"
-  sampleID : "s_C_8XFJMJ_P001_d01"
+  sample_id : "s_C_8XFJMJ_P001_d01"
 ---
 
 ```{r loadData, echo=FALSE, include=FALSE}
@@ -21,7 +21,7 @@ params:
 
 source("load_data.R", local=knitr::knit_global())
 inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir)
-data=load_data(params$sampleID, inputs)
+data=load_data(params$sample_id, inputs)
 ```
 
 
