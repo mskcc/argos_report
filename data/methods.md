@@ -1,1 +1,1 @@
-../../../Goliath/data/methods.md
+../Goliath/data/methods.md
