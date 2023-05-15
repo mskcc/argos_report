@@ -2,7 +2,7 @@
 # CWL for compiling report
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: [ "compile_sample_level.R" ]
+baseCommand: [ "Rscript compile_sample_level.R" ]
 requirements:
   DockerRequirement:
     dockerPull: argos_report-1.0:latest
@@ -10,17 +10,17 @@ arguments: ["--vanilla"]
 
 inputs:
   sample_id:
-    type: File
+    type: string
     inputBinding:
       position: 1
       prefix: '--sample_id'
   portal_dir:
-    type: File
+    type: Directory
     inputBinding:
       position: 2
       prefix: '--portal_dir'
   analysis_dir:
-    type: File
+    type: Directory
     inputBinding:
       position: 3
       prefix: '--analysis_dir'
