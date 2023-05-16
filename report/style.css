@@ -210,7 +210,7 @@ border-bottom-left-radius: 0;
   color: #984EA3; }
 
 .oncokb.icon {
-  background-image: url(oncoKb_icons.png);
+  background-image: url(../oncoKb_icons.png);
   width: 18px;
   height: 18px;
   flex-shrink: 0;
