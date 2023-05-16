@@ -148,4 +148,135 @@ border-bottom-left-radius: 0;
 
 }
 
+/*OncoKb icons come below*/
+.oncokb.oncogenic, .oncokb.likely-oncogenic, .oncokb.resistance {
+  color: #0968C3; }
+
+.oncokb.neutral, .oncokb.likely-neutral {
+  color: #696969; }
+
+.oncokb.inconclusive {
+  color: #AAAAAA; }
+
+.oncokb.vus {
+  color: #696969; }
+
+.oncokb.unknown {
+  color: #CCCCCC; }
+
+.oncokb.level-1 {
+  color: #33A02C; }
+
+.oncokb.level-2 {
+  color: #1F78B4; }
+
+.oncokb.level-3 {
+  color: #984EA3; }
+
+.oncokb.level-3A {
+  color: #984EA3; }
+
+.oncokb.level-3B {
+  color: #BE98CE; }
+
+.oncokb.level-4 {
+  color: #424242; }
+
+.oncokb.level-R1 {
+  color: #EE3424; }
+
+.oncokb.level-R2 {
+  color: #F79A92; }
+
+.oncokb.level-R3 {
+  color: #FCD6D3; }
+
+.oncokb.level-Dx1 {
+  color: #33A02C; }
+
+.oncokb.level-Dx2 {
+  color: #1F78B4; }
+
+.oncokb.level-Dx3 {
+  color: #984EA3; }
+
+.oncokb.level-Px1 {
+  color: #33A02C; }
+
+.oncokb.level-Px2 {
+  color: #1F78B4; }
+
+.oncokb.level-Px3 {
+  color: #984EA3; }
+
+.oncokb.icon {
+  background-image: url(oncoKb_icons.png);
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  line-height: 18px;
+  background-size: 170px;
+  margin: 0 3px;
+  display: block; }
+  .oncokb.icon.oncogenic, .oncokb.icon.likely-oncogenic, .oncokb.icon.resistance {
+    background-position-x: -13px;
+    background-position-y: -19px; }
+  .oncokb.icon.neutral, .oncokb.icon.likely-neutral {
+    background-position-x: -38px;
+    background-position-y: -19px; }
+  .oncokb.icon.inconclusive {
+    background-position-x: -63px;
+    background-position-y: -19px; }
+  .oncokb.icon.vus {
+    background-position-x: -88px;
+    background-position-y: -19px; }
+  .oncokb.icon.unknown {
+    background-position-x: -113px;
+    background-position-y: -19px; }
+  .oncokb.icon.level-1 {
+    background-position-x: -13px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-2 {
+    background-position-x: -38px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-3 {
+    background-position-x: -63px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-3A {
+    background-position-x: -88px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-3B {
+    background-position-x: -113px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-4 {
+    background-position-x: -138px;
+    background-position-y: -49px; }
+  .oncokb.icon.level-R1 {
+    background-position-x: -13px;
+    background-position-y: -79px; }
+  .oncokb.icon.level-R2 {
+    background-position-x: -38px;
+    background-position-y: -79px; }
+  .oncokb.icon.level-R3 {
+    background-position-x: -63px;
+    background-position-y: -79px; }
+  .oncokb.icon.level-Dx1 {
+    background-position-x: -13px;
+    background-position-y: -109px; }
+  .oncokb.icon.level-Dx2 {
+    background-position-x: -38px;
+    background-position-y: -109px; }
+  .oncokb.icon.level-Dx3 {
+    background-position-x: -63px;
+    background-position-y: -109px; }
+  .oncokb.icon.level-Px1 {
+    background-position-x: -13px;
+    background-position-y: -139px; }
+  .oncokb.icon.level-Px2 {
+    background-position-x: -38px;
+    background-position-y: -139px; }
+  .oncokb.icon.level-Px3 {
+    background-position-x: -63px;
+    background-position-y: -139px; }
+
 
