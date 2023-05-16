@@ -39,6 +39,5 @@ RUN wget "https://repo.anaconda.com/miniconda/Miniconda3-py39_4.10.3-Linux-x86_6
 # install extra libraries
 ADD environment.yml /environment.yml
 RUN conda env update -n base --file /environment.yml
-RUN mkdir -p /usr/report
-ADD report /usr/report
+ADD report /usr/
 ENV PATH=/usr/report:$PATH
