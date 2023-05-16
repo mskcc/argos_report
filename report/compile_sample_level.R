@@ -3,14 +3,15 @@
 library("argparse")
 
 VERSION="1.0.1"
-
+default_output_dir <- normalizePath(getwd())
 
 # start arg parser
 parser <- ArgumentParser()
 parser$add_argument("--sample_id", help="Sample id")
 parser$add_argument("--analysis_dir", help="analysis_dir path")
 parser$add_argument("--portal_dir", help="portal_dir path")
-parser$add_argument("--output_dir", help="Output directory") # ToDo: make default current working dir. default=default_output_dir, 
+parser$add_argument("--output_dir", default=default_output_dir, help="Output dirname")
+
 
 # parser$add_argument("--geneAnnotation_path", help="Gene annotation file")
 
@@ -22,7 +23,7 @@ output_file_name=paste0("rpt_",projectNo,"-",args$sample_id,"__",VERSION,".html"
 
 # compile the HTML report
 rmarkdown::render(
-    input = "report_sample_level.Rmd", 
+    input = "/usr/report/report_sample_level.Rmd",
     params = list(
         analysis_dir = args$analysis_dir,
         portal_dir = args$portal_dir,
