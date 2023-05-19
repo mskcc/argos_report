@@ -18,7 +18,7 @@ parser$add_argument("--output_dir", default=default_output_dir, help="Output dir
 
 args <- parser$parse_args()
 
-projectNo=stringi::stri_match(args$argosDir,regex="argos/([^/]+)/")[2]
+projectNo=stringi::stri_match(args$portal_dir,regex="argos/([^/]+)/")[2]
 output_file_name=paste0("rpt_",projectNo,"-",args$sample_id,"__",VERSION,".html")
 
 # compile the HTML report
