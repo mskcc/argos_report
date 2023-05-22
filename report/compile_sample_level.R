@@ -7,6 +7,7 @@ default_output_dir <- normalizePath(getwd())
 
 # start arg parser
 parser <- ArgumentParser()
+parser$add_argument("--request_id", help="Request id")
 parser$add_argument("--sample_id", help="Sample id")
 parser$add_argument("--analysis_dir", help="analysis_dir path")
 parser$add_argument("--portal_dir", help="portal_dir path")
@@ -18,8 +19,7 @@ parser$add_argument("--output_dir", default=default_output_dir, help="Output dir
 
 args <- parser$parse_args()
 
-projectNo=stringi::stri_match(args$portal_dir,regex="argos/([^/]+)/")[2]
-output_file_name=paste0("rpt_",projectNo,"-",args$sample_id,"__",VERSION,".html")
+output_file_name=paste0("rpt_",args$request_id,"-",args$sample_id,"__",VERSION,".html")
 
 # compile the HTML report
 rmarkdown::render(
