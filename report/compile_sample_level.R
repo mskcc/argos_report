@@ -19,13 +19,6 @@ parser$add_argument("--output_dir", default=default_output_dir, help="Output dir
 args <- parser$parse_args()
 
 projectNo=stringi::stri_match(args$portal_dir,regex="argos/([^/]+)/")[2]
-
-if(is.na(projectNo)){
-        cat("\n\n Project must be in argos dir\n")
-        cat("portal_dir =",args$portal_dir,"\n\n\n")
-        rlang::abort("FATAL ERROR")
-}
-
 output_file_name=paste0("rpt_",projectNo,"-",args$sample_id,"__",VERSION,".html")
 
 # compile the HTML report
