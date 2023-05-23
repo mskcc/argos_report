@@ -14,13 +14,14 @@ params:
   analysis_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/analysis/"
   portal_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/portal/"
   sample_id : "s_C_8XFJMJ_P001_d01"
+  oncokb_file: "dummy"
 ---
 
 ```{r loadData, echo=FALSE, include=FALSE}
 
 
 source("load_data.R", local=knitr::knit_global())
-inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir)
+inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir, oncokb_file = params$oncokb_file)
 data=load_data(params$sample_id, inputs)
 ```
 
