@@ -21,7 +21,7 @@ params:
 
 
 source("load_data.R", local=knitr::knit_global())
-inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir, oncokb_dir = params$oncokb_file)
+inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir, oncokb_dir = params$oncokb_dir)
 data=load_data(params$sample_id, inputs)
 ```
 
