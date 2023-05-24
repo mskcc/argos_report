@@ -29,7 +29,7 @@ inputs:
       position: 4
       prefix: '--analysis_dir'
   oncokb_dir:
-      type: File
+      type: Directory
       inputBinding:
         position: 5
         prefix: '--oncokb_dir'
