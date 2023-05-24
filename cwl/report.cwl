@@ -28,11 +28,11 @@ inputs:
     inputBinding:
       position: 4
       prefix: '--analysis_dir'
-  oncokb_file:
+  oncokb_dir:
       type: File
       inputBinding:
         position: 5
-        prefix: '--oncokb_file'
+        prefix: '--oncokb_dir'
 
 
 outputs:
