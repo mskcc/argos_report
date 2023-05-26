@@ -10,7 +10,7 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
   DockerRequirement:
-    dockerPull: argos_report:1.0.3
+    dockerPull: mskcc/argos_report:1.0.3
 
 inputs:
   request_id:
