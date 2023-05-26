@@ -10,7 +10,7 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
   DockerRequirement:
-    dockerPull: argos_report:1.0.2
+    dockerPull: argos_report:1.0.3
 
 inputs:
   request_id:
@@ -37,7 +37,7 @@ steps:
     scatter: sample_id
     scatterMethod: dotproduct
     out: [output_file]
-  
+
 
 outputs:
   output_file:
