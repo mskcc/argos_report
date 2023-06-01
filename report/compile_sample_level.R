@@ -11,6 +11,7 @@ parser$add_argument("--request_id", help="Request id")
 parser$add_argument("--sample_id", help="Sample id")
 parser$add_argument("--analysis_dir", help="analysis_dir path")
 parser$add_argument("--portal_dir", help="portal_dir path")
+parser$add_argument("--oncokb_file", help="oncokb file path")
 parser$add_argument("--output_dir", default=default_output_dir, help="Output dirname")
 
 
@@ -27,7 +28,8 @@ rmarkdown::render(
     params = list(
         analysis_dir = args$analysis_dir,
         portal_dir = args$portal_dir,
-        sample_id=args$sample_id
+        sample_id = args$sample_id,
+        oncokb_file = args$oncokb_file
         # geneAnnotation_path = args$geneAnnotation_path,
 
     ),

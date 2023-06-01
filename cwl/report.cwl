@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: [ "compile_sample_level.R" ]
 requirements:
   DockerRequirement:
-    dockerPull: mskcc/argos_report:1.0.1
+    dockerPull: mskcc/argos_report:1.0.3
 
 inputs:
   request_id:
@@ -28,7 +28,11 @@ inputs:
     inputBinding:
       position: 4
       prefix: '--analysis_dir'
-
+  oncokb_file:
+      type: File
+      inputBinding:
+        position: 5
+        prefix: '--oncokb_file'
 
 
 outputs:
