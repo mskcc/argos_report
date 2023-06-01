@@ -3,6 +3,8 @@
 library("argparse")
 source("version.R")
 
+VERSION=unlist(strsplit(VERSION," "))[1]
+
 default_output_dir <- normalizePath(getwd())
 
 # start arg parser
