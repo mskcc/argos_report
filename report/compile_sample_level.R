@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
 # script to compile report from pipeline data
 library("argparse")
+source("version.R")
 
-VERSION="1.0.1"
 default_output_dir <- normalizePath(getwd())
 
 # start arg parser
