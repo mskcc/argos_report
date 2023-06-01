@@ -9,6 +9,7 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 RUN apt-get update -q && \
     apt-get install -q -y --no-install-recommends \
         bzip2 \
+        zip \
         ca-certificates \
         git \
         libglib2.0-0 \
