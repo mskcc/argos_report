@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: [ "compile_sample_level.R" ]
 requirements:
   DockerRequirement:
-    dockerPull: mskcc/argos_report:1.0.4
+    dockerPull: mskcc/argos_report:1.0.5
 
 inputs:
   request_id:
