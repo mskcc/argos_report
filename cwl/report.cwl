@@ -28,6 +28,16 @@ inputs:
     inputBinding:
       position: 4
       prefix: '--analysis_dir'
+  facets_dir:
+    type: Directory
+    inputBinding:
+      position: 4
+      prefix: '--facets_dir'
+  maf_dir:
+    type: Directory
+    inputBinding:
+      position: 4
+      prefix: '--maf_dir'
   oncokb_file:
       type: File
       inputBinding:

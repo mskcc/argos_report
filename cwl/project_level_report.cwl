@@ -21,6 +21,10 @@ inputs:
     type: Directory
   analysis_dir:
     type: Directory
+  facets_dir:
+    type: Directory
+  maf_dir:
+    type: Directory
   oncokb_file:
     type: File
 
