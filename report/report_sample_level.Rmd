@@ -13,7 +13,8 @@ self_contained: true
 params:
   analysis_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/analysis/"
   portal_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/portal/"
-  sample_id : "s_C_8XFJMJ_P001_d01"
+  tumor_id : "s_C_8XFJMJ_P001_d01"
+  normal_id : "s_C_ABCDEF_N001_d01"
   oncokb_file: "dummy"
 ---
 
