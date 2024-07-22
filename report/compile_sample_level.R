@@ -2,7 +2,7 @@
 # script to compile report from pipeline data
 library("argparse")
 
-VERSION="1.0.1"
+VERSION="1.0.2"
 default_output_dir <- normalizePath(getwd())
 
 # start arg parser
@@ -21,7 +21,7 @@ parser$add_argument("--output_dir", default=default_output_dir, help="Output dir
 
 args <- parser$parse_args()
 
-output_file_name=paste0("rpt_",args$request_id,"-",args$sample_id,"__",VERSION,".html")
+output_file_name=paste0("rpt_",args$request_id,"-",args$tumor_id,"__",VERSION,".html")
 
 # compile the HTML report
 rmarkdown::render(

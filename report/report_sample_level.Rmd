@@ -11,10 +11,10 @@ always_allow_html: true
 self_contained: true
 
 params:
-  analysis_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/analysis/"
-  portal_dir : "~/Work/mutation_report_sample_level/data/argos/08390_R/1.1.2/20230208_22_12_784560/portal/"
-  tumor_id : "s_C_8XFJMJ_P001_d01"
-  normal_id : "s_C_ABCDEF_N001_d01"
+  analysis_dir : "/Users/vurals/Work/mutation_report/mutation_report_sample_level_v11_zero_mutations_case/15450_B/analysis/"
+  portal_dir : "/Users/vurals/Work/mutation_report/mutation_report_sample_level_v11_zero_mutations_case/15450_B/portal/"
+  tumor_id : "s_C_WA4R58_T003_d03"
+  normal_id : "s_C_WA4R58_N002_d02"
   oncokb_file: "dummy"
 ---
 
@@ -22,8 +22,8 @@ params:
 
 
 source("load_data.R", local=knitr::knit_global())
-inputs <- list(analysis_dir = params$analysis_dir, portal_dir = params$portal_dir, oncokb_file = params$oncokb_file)
-data=load_data(params$sample_id, inputs)
+inputs <- list(tumor_id = params$tumor_id, normal_id = params$normal_id, analysis_dir = params$analysis_dir, portal_dir = params$portal_dir, oncokb_file = params$oncokb_file)
+data=load_data(params$tumor_id, params$normal_id, inputs)
 ```
 
 
