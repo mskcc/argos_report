@@ -42,7 +42,7 @@ output_file_name=paste0("rpt_",args$request_id,"-",args$tumor_id,"__",VERSION,".
 
 # compile the HTML report
 rmarkdown::render(
-    input = "report_sample_level.Rmd",
+    input = "/usr/report/report_sample_level.Rmd",
     params = list(
         analysis_dir = args$analysis_dir,
         portal_dir = args$portal_dir,
