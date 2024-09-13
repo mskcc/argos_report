@@ -10,14 +10,12 @@ requirements:
   StepInputExpressionRequirement: {}
   InlineJavascriptRequirement: {}
   DockerRequirement:
-    dockerPull: mskcc/argos_report:dev
+    dockerPull: mskcc/argos_report:1.0.6
 
 inputs:
   request_id:
     type: string
-  tumor_ids:
-    type: string[]
-  normal_ids:
+  sample_ids:
     type: string[]
   portal_dir:
     type: Directory
@@ -31,13 +29,12 @@ steps:
     run: report.cwl
     in:
       request_id: request_id
-      tumor_id: tumor_ids
-      normal_id: normal_ids
+      sample_id: sample_ids
       portal_dir: portal_dir
       analysis_dir: analysis_dir
       oncokb_file: oncokb_file
 
-    scatter: [tumor_id, normal_id]
+    scatter: sample_id
     scatterMethod: dotproduct
     out: [output_file]
 
