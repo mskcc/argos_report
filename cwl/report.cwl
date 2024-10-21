@@ -5,7 +5,7 @@ class: CommandLineTool
 baseCommand: [ "compile_sample_level.R" ]
 requirements:
   DockerRequirement:
-    dockerPull: mskcc/argos_report:1.0.8
+    dockerPull: mskcc/argos_report:1.1.0
 
 inputs:
   request_id:
@@ -13,11 +13,16 @@ inputs:
     inputBinding:
       position: 1
       prefix: '--request_id'
-  sample_id:
+  normal_id:
     type: string
     inputBinding:
       position: 2
-      prefix: '--sample_id'
+      prefix: '--normal_id'
+  tumor_id:
+    type: string
+    inputBinding:
+      position: 2
+      prefix: '--tumor_id'
   portal_dir:
     type: Directory
     inputBinding:
