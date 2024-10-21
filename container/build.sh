@@ -3,4 +3,4 @@
 [ -e report ] && rm -rf report
 mkdir report
 cp -r ../* report/
-docker build -t "mskcc/argos_report:1.0.8" .
+docker build -t "mskcc/argos_report:dev" .
