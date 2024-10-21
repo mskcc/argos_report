@@ -31,8 +31,8 @@ steps:
     run: report.cwl
     in:
       request_id: request_id
-      normal_ids: normal_id
-      tumor_ids: tumor_id
+      normal_id: normal_ids
+      tumor_id: tumor_ids
       portal_dir: portal_dir
       analysis_dir: analysis_dir
       oncokb_file: oncokb_file
