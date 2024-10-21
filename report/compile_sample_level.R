@@ -7,7 +7,7 @@ suppressPackageStartupMessages({
     library("argparse")
 })
 
-VERSION="dev"
+VERSION="1.1.0"
 default_output_dir <- normalizePath(getwd())
 
 # start arg parser
